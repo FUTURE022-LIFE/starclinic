@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星和醫美診所｜行政小幫手招募</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: `#202020`,
+                        beauty: `#F8E1E7`,
+                        rosegold: `#B76E79`,
+                        softpink: `#FFF5F7`,
+                        accent: `#D9AC48`
+                    },
+                    fontFamily: {
+                        sans: [`Poppins`, `Noto Sans TC`, `sans-serif`],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #202020;
+            overflow-x: hidden;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #FFF5F7 0%, #F8E1E7 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(183, 110, 121, 0.1);
+        }
+        .btn-shadow {
+            box-shadow: 0 4px 15px rgba(183, 110, 121, 0.3);
+        }
+        .section-padding {
+            padding: 40px 20px;
+        }
+        .kuse-branding {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #9C9C9C;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+        .kuse-branding:hover {
+            color: #B76E79;
+        }
+        .kuse-branding svg {
+            height: 1.2em;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Hero Section -->
+    <header class="gradient-bg min-h-[70vh] flex flex-col items-center justify-center text-center section-padding relative overflow-hidden">
+        <div class="absolute top-[-10%] right-[-10%] w-64 h-64 rounded-full bg-white opacity-40 blur-3xl"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-64 h-64 rounded-full bg-rosegold opacity-10 blur-3xl"></div>
+        
+        <div class="z-10 max-w-md mx-auto">
+            <div class="inline-block px-4 py-1 rounded-full border border-rosegold text-rosegold text-sm font-medium mb-6 tracking-widest">
+                STARONIC MEDICAL BEAUTY
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-primary mb-4 leading-tight">
+                星和醫美診所<br>
+                <span class="text-rosegold">行政小幫手招募中</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 font-light">
+                這不是那種一成不變只能整理文件的行政工作<br>
+                是一份——<span class="font-semibold text-rosegold">一邊工作，一邊慢慢變漂亮</span>的職位。
+            </p>
+            <a href="https://lin.ee/tPZd8Gp" class="inline-block w-full sm:w-auto px-10 py-4 bg-rosegold text-white rounded-full font-bold text-lg btn-shadow hover:bg-[#A65D68] transition-all transform hover:scale-105 active:scale-95">
+                立即點擊報名
+            </a>
+        </div>
+    </header>
+
+    <!-- Target Audience -->
+    <section class="bg-white section-padding">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8 relative inline-block w-full">
+                我們在找這樣的你
+                <span class="block w-12 h-1 bg-rosegold mx-auto mt-2 rounded-full"></span>
+            </h2>
+            <div class="space-y-4">
+                <div class="flex items-center p-4 rounded-[16px] border border-[rgba(32,32,32,0.08)] bg-softpink">
+                    <div class="w-8 h-8 flex items-center justify-center bg-rosegold text-white rounded-full mr-4 flex-shrink-0">✓</div>
+                    <span class="text-primary font-medium">平常就有在關注醫美、保養</span>
+                </div>
+                <div class="flex items-center p-4 rounded-[16px] border border-[rgba(32,32,32,0.08)] bg-white">
+                    <div class="w-8 h-8 flex items-center justify-center bg-rosegold text-white rounded-full mr-4 flex-shrink-0">✓</div>
+                    <span class="text-primary font-medium">想做看起來比較體面的工作</span>
+                </div>
+                <div class="flex items-center p-4 rounded-[16px] border border-[rgba(32,32,32,0.08)] bg-softpink">
+                    <div class="w-8 h-8 flex items-center justify-center bg-rosegold text-white rounded-full mr-4 flex-shrink-0">✓</div>
+                    <span class="text-primary font-medium">想兼職賺錢，但不想做太累的工作</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Middle Section -->
+    <section class="section-padding bg-softpink">
+        <div class="max-w-md mx-auto text-center">
+            <div class="rounded-[20px] overflow-hidden shadow-2xl border-4 border-white mb-6">
+                <img id="middleImage" src="https://api.kuse.ai/api/folder/v1/file/a3e91c36c3919d6ad283739f415455ba4d061fc697d70da9b353c836f055b03c_3182008.jpg" alt="星和醫美診所環境" class="w-full h-auto object-cover">
+            </div>
+            <p class="text-sm text-gray-500 italic">優雅舒適的工作環境，讓你每天都有好心情</p>
+        </div>
+    </section>
+
+    <!-- Job Responsibilities -->
+    <section class="bg-white section-padding">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8 relative inline-block w-full">
+                工作內容很單純
+                <span class="block w-12 h-1 bg-rosegold mx-auto mt-2 rounded-full"></span>
+            </h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="p-5 rounded-[16px] border-[2px] border-[rgba(32,32,32,0.08)] bg-white hover:border-rosegold transition-colors">
+                    <h3 class="font-bold text-rosegold mb-2">● 客戶服務</h3>
+                    <p class="text-gray-600">整理客戶資料、協助安排預約，回覆基本QA問題。</p>
+                </div>
+                <div class="p-5 rounded-[16px] border-[2px] border-[rgba(32,32,32,0.08)] bg-white hover:border-rosegold transition-colors">
+                    <h3 class="font-bold text-rosegold mb-2">● 文案整理</h3>
+                    <p class="text-gray-600">整理療程與文件資料，保持診所行政運作順暢。</p>
+                </div>
+                <div class="p-5 rounded-[16px] border-[2px] border-[rgba(32,32,32,0.08)] bg-white hover:border-rosegold transition-colors">
+                    <h3 class="font-bold text-rosegold mb-2">● 完整培訓</h3>
+                    <p class="text-gray-600">公司提供完整教學與後台系統，不用擔心自己摸索。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Flexibility -->
+    <section class="gradient-bg section-padding">
+        <div class="max-w-md mx-auto text-center">
+            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 floating shadow-sm">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B76E79" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h2 class="text-2xl font-bold mb-4">彈性排班，時間自由</h2>
+            <div class="bg-white p-6 rounded-[20px] shadow-sm">
+                <p class="text-lg font-medium text-primary mb-2">10:00 ～ 22:00 皆可排班</p>
+                <p class="text-gray-600 leading-relaxed">
+                    時間自己抓，想多排就多排。<br>
+                    只要熟悉流程後，就能穩穩地兼顧生活與收入。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salary & Benefits -->
+    <section class="bg-white section-padding">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-8">薪資福利與優勢</h2>
+            <div class="space-y-4">
+                <div class="p-6 rounded-[20px] bg-primary text-white relative overflow-hidden">
+                    <div class="absolute right-[-20px] top-[-20px] opacity-10">
+                        <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                    </div>
+                    <p class="text-rosegold font-bold tracking-tighter text-sm mb-1">HIGH HOURLY RATE</p>
+                    <h3 class="text-3xl font-bold mb-2">NT$250～280 / hr</h3>
+                    <p class="text-gray-300 text-sm">滿一個月考核後即調至 $280</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="p-4 rounded-[16px] bg-softpink border border-rosegold/10 text-center">
+                        <div class="text-rosegold font-bold text-xl mb-1">+$10,000</div>
+                        <p class="text-xs text-gray-600">每月滿50小時獎金</p>
+                    </div>
+                    <div class="p-4 rounded-[16px] bg-softpink border border-rosegold/10 text-center">
+                        <div class="text-rosegold font-bold text-xl mb-1">85折</div>
+                        <p class="text-xs text-gray-600">醫美保養員工價</p>
+                    </div>
+                    <div class="p-4 rounded-[16px] bg-softpink border border-rosegold/10 text-center">
+                        <div class="text-rosegold font-bold text-xl mb-1">三節獎金</div>
+                        <p class="text-xs text-gray-600">節慶福利不可少</p>
+                    </div>
+                    <div class="p-4 rounded-[16px] bg-softpink border border-rosegold/10 text-center">
+                        <div class="text-rosegold font-bold text-xl mb-1">美睫美甲</div>
+                        <p class="text-xs text-gray-600">每三個月補助一次</p>
+                    </div>
+                </div>
+                
+                <p class="text-center text-rosegold font-medium mt-6">
+                    「這是一份工作，同時也是在投資自己。」
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="gradient-bg section-padding text-center">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-2xl font-bold mb-4">準備好加入我們了嗎？</h2>
+            <p class="text-gray-600 mb-8 px-4">
+                如果你正在找一份：<br>
+                「不累、好上手、有收入、又能變漂亮的工作」
+            </p>
+            <a href="https://lin.ee/tPZd8Gp" class="inline-block w-full px-10 py-4 bg-rosegold text-white rounded-full font-bold text-lg btn-shadow hover:bg-[#A65D68] transition-all transform hover:scale-105 active:scale-95 mb-6">
+                立即點擊報名
+            </a>
+            <p class="text-xs text-gray-400">名額有限，優先應徵者將優先安排面試</p>
+        </div>
+    </section>
+
+    <footer class="bg-white py-8 border-t border-gray-100 text-center">
+        <a href="https://kuse.ai" class="kuse-branding" target="_blank">
+            <span>made with</span>
+            <svg viewBox="0,0,160,44" xmlns="http://www.w3.org/2000/svg"><path d="m.01,20.65C-.43,8.25,9.3-2.03,22.04.34,34.78,2.72,43.29,8.32,43.29,22.9s-8.66,19.01-22.03,20.3C7.9,44.5.46,33.05.01,20.65z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="m146.76,7.94c8.07,0,13.24,6.15,13.24,14.58v1.39h-20.75c.45,4.05,3.51,7.37,8.57,7.37,2.62,0,5.73-1.05,7.62-2.94l2.67,3.83c-2.67,2.55-6.62,3.88-10.9,3.88-8.07,0-14.08-5.6-14.08-14.08,0-7.76,5.67-14.02,13.63-14.02zm0,4.77c-5.01,0-7.29,3.83-7.57,7.1h15.13c-.11-3.16-2.28-7.1-7.57-7.1z" fill="currentColor"/><path d="m86.64,24.49c0,4.15,2.39,6.84,6.84,6.84,4.4,0,6.84-2.69,6.84-6.84V8.55h5.37v16.33c0,6.7-4.06,11.14-12.21,11.14-8.21,0-12.21-4.5-12.21-11.09V8.55h5.37v15.94zm32.99-16.55c4.49,0,8.06,1.47,10.6,3.86l-2.59,3.81c-2.05-2-5.28-3.08-8.06-3.08-2.88,0-4.84,1.37-4.84,3.32,0,1.91,2.64,2.54,5.81,3.27,4.59,1.08,10.26,2.4,10.26,8.46,0,4.94-3.76,8.41-11.14,8.41-4.98,0-8.94-1.76-11.24-4.11l2.54-4.11c1.86,1.91,5.18,3.67,8.84,3.67,3.91,0,5.57-1.66,5.57-3.62,0-2.3-2.88-2.98-6.21-3.76-4.54-1.08-9.87-2.3-9.87-8.06,0-4.5,4.2-8.06,10.31-8.06zM60.79,20.82,71.44,8.55h6.5L66.46,21.26,78.82,35.44h-6.5l-9.28-11.1-2.25,2.49v8.6h-5.33V8.55h5.33v12.27z" fill="currentColor"/></svg>
+        </a>
+        <p class="text-[10px] text-gray-300 mt-4">&copy; 2024 星和醫美診所 Recruitment</p>
+    </footer>
+
+    <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
+    <script>
+        // Convert the image to base64 if needed, currently displayed via URL
+        // Simple scroll reveal animation logic
+        document.addEventListener(`DOMContentLoaded`, () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add(`opacity-100`);
+                        entry.target.classList.remove(`translate-y-10`, `opacity-0`);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll(`section`).forEach(section => {
+                section.classList.add(`transition-all`, `duration-1000`, `opacity-0`, `translate-y-10`);
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html></html>
